@@ -13,3 +13,12 @@ def image_upload(request):
             "image_url": image_url
         })
     return render(request, "upload.html")
+
+def test(request):
+    if request.method == "GET":
+        lists = [];
+        lists = ['aa','bb','xx'];
+        print(lists)
+        return render(request, "test.html", {
+            "lists": lists
+        })

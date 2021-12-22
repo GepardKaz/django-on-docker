@@ -1,0 +1,14 @@
+{% block content %}
+
+  <h1>TEST</h1>
+  <hr>
+  <h3>{{ lists }}</h3>
+
+  {% if lists|length > 0 %}
+    {% for list, i in lists %}
+      <h3>{{ i }} -- {{ list }}</h3>    
+    {% endfor %}
+  {% else %}  
+  {% endif %}
+
+{% endblock %}
